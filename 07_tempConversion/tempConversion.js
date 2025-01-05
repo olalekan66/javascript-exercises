@@ -1,13 +1,9 @@
-const convertToCelsius = function(x) {
-  const degreeInCelcius = (x - 32) * 5/9;
-  const round = parseFloat(degreeInCelcius.toFixed(1));
-  return round;
+const convertToCelsius = function(fahrenheit) {
+  return parseFloat(((fahrenheit - 32) * 5/9).toFixed(1));
 };
 
-const convertToFahrenheit = function(tempCel) {
-    const degreeInFahrenheit = (tempCel * 9/5) + 32;
-    const rounded = parseFloat(degreeInFahrenheit.toFixed(1));
-    return rounded;
+const convertToFahrenheit = function(celcius) {
+    return parseFloat(((celcius * 9/5) + 32).toFixed(1));
 };
 convertToCelsius(32);
 convertToCelsius(100);
